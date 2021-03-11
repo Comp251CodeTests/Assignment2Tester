@@ -320,7 +320,7 @@ public class GreedyTester {
 		if (trigger == 0) { System.out.println("DIDN'T FIND ANY PROBLEMS W/ SOLUTION.\n"); }
 		else { System.out.println("FOUND SOME PROBLEMS W/ SOLUTION.\n"); }
 		System.out.println("-------STARTING GREEDY TESTER 2-----\n");
-		Tester.GreedyTester2();
+		GreedyTester.GreedyTester2();
 	}
 
 }
