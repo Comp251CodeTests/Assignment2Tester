@@ -64,8 +64,8 @@ public class MiniTester {
 		int[][] expected = {{1,2,1,2,1},{3,5,3,4,3},{4,2,1,2,1}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 1.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 1.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 1 for the solver method!"+ "\n");
 	}
@@ -100,8 +100,8 @@ public class MiniTester {
 		int[][] expected = {{3,1,4,2,1,2,1},{4,2,5,3,6,5,4},{1,3,1,4,2,3,1},{2,4,2,3,1,4,2},{1,3,1,5,2,3,1},{4,2,4,3,4,5,2},{1,3,1,2,1,3,1}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 2.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 2.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 2 for the solver method!"+ "\n");
 	}
@@ -117,8 +117,8 @@ public class MiniTester {
 		int[][] expected = {{1}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 3.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 3.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 3 for the solver method!"+ "\n");
 	}
@@ -135,8 +135,8 @@ public class MiniTester {
 		int[][] expected = {{1,2,1}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 4.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 4.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 4 for the solver method!"+ "\n");
 	}
@@ -153,8 +153,8 @@ public class MiniTester {
 		int[][] expected = {{1,2,1}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 5.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 5.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 5 for the solver method!"+ "\n");
 	}
@@ -173,8 +173,8 @@ public class MiniTester {
 		int[][] expected = {{1},{2},{1}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 6.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 6.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 6 for the solver method!"+ "\n");
 	}
@@ -193,8 +193,8 @@ public class MiniTester {
 		int[][] expected = {{1},{2},{1}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 7.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 7.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 7 for the solver method!"+ "\n");
 	}
@@ -225,8 +225,8 @@ public class MiniTester {
 		int[][] expected = {{2,5,1,3,2,4,1},{1,3,2,4,5,3,5},{4,5,1,3,2,1,4},{2,3,2,5,4,3,2},{4,1,4,3,1,5,4},{5,2,5,2,4,2,1},{1,4,3,1,3,5,3}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 8.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 8.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 8 for the solver method!"+ "\n");
 	}
@@ -258,8 +258,8 @@ public class MiniTester {
 		int[][] expected = {{2,3,2,5,1,4,1},{4,5,1,4,3,5,3},{3,2,3,2,1,4,2},{1,4,1,4,5,3,5},{2,3,2,3,2,4,1},{1,5,1,4,1,5,3},{4,2,3,2,3,2,1}};
 		Game game = loadSudoku(in);
 		int[][] result = game.solver();
-		if (Arrays.equals(result, expected))
-			System.err.println("Failed Sudoku 9.\nOutput: " + Arrays.toString(result) + "\nExpected: " + Arrays.toString(expected) + "\n");
+		if (!Arrays.deepEquals(result, expected))
+			System.err.println("Failed Sudoku 9.\nOutput: " + Arrays.deepToString(result) + "\nExpected: " + Arrays.deepToString(expected) + "\n");
 		else
 			System.out.println("Passed Sudoku test 9 for the solver method!"+ "\n");
 	}
