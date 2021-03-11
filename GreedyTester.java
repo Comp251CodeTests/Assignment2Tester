@@ -94,10 +94,10 @@ public class GreedyTester {
 	public static boolean codepostTests() {
 		System.out.println("-------TESTING CODEPOST'S TESTS-----\n");
 		int trigger = 0;
-		if (typicalInput()==false) { System.out.println("Error found in typicalInput()."); trigger = 1; }
-		if (noConflicts()==false) { System.out.println("Error found in typicalInput()."); trigger = 1; }
-		if (weightAdvantage()==false) { System.out.println("Error found in typicalInput()."); trigger = 1; }
-		if (notUrgent()==false) { System.out.println("Error found in typicalInput()."); trigger = 1; }
+		if (typicalInput()==false) { System.out.println("Error found in typicalInput() /codepost test 1&2/."); trigger = 1; }
+		if (noConflicts()==false) { System.out.println("Error found in noConflicts() /codepost test 3/."); trigger = 1; }
+		if (weightAdvantage()==false) { System.out.println("Error found in weightAdvantage() /codepost test 4/."); trigger = 1; }
+		if (notUrgent()==false) { System.out.println("Error found in notUrgent() /codepost test 5/."); trigger = 1; }
 
 		if (trigger == 1) { return false; }
 		else { return true; }
